@@ -2,7 +2,6 @@ from tkinter import *
 
 # Create window for adding the labels
 window = Tk()
-window.geometry("500x500")
 window.title("Labels")
 
 # Instantiate the label from tkinter
@@ -46,5 +45,15 @@ label6 = Label(window,
                padx=10,
                pady=10)
 label6.pack()
+
+'''
+Adding a photo to a label using the image attribute
+Use the compund attribute to display both the image and the text
+'''
+picture = PhotoImage(file="TKinterGUI/sun.png")
+label7 = Label(text="Hello world", 
+               image=picture,
+               compound="bottom")
+label7.pack()
 
 window.mainloop()
