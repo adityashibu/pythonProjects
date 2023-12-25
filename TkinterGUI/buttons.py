@@ -8,8 +8,15 @@ button = Button(window,
                 )
 button.pack()
 
+count = 0
+
 def click():
     print("You clicked the button :P")
+    
+def counter():
+    global count
+    count += 1
+    print(count)
 
 '''
 Tell the button what to do using the command attribute
@@ -44,7 +51,8 @@ button4 = Button(window,
                  bg="Red",
                  fg="white",
                  activebackground="White",
-                 activeforeground="Red")
+                 activeforeground="Red",
+                 command=counter)
 button4.pack()
 
 '''
