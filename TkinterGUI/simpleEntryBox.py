@@ -36,4 +36,13 @@ deleteBtn = Button(window,
                    command=delete)
 deleteBtn.pack(side=LEFT)
 
+# Backspace function 
+def backspace():
+    entry.delete(len(entry.get()) - 1, END)
+    
+backSpaceBtn = Button(window,
+                      text="BackSpace",
+                      command=backspace)
+backSpaceBtn.pack(side=RIGHT)
+
 window.mainloop()
