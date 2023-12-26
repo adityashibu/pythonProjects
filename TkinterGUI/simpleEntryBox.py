@@ -11,8 +11,14 @@ entry.pack(side=LEFT)
 
 # Submit function
 def submit():
-    name = entry.get()
-    print(f"Hello, {name}")
+    while True:
+        name = entry.get()
+        if name == "":
+            print("Error, enter a valid name")
+        else:
+            print(f"Hello, {name}")
+            break
+        break
     
 # Submit button
 submitBtn = Button(window,
