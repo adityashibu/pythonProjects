@@ -6,7 +6,8 @@ window.title("Entry box")
 entry = Entry(window, 
               font=("Courier", 50),
               bg="black",
-              fg="#00ff00")
+              fg="#00ff00", 
+              show="*") # Show command shows a certain character or symbol, useful when entering passwords)
 entry.pack(side=LEFT)
 
 # Submit function
